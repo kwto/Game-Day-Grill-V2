@@ -3,7 +3,7 @@ import Image from 'next/image'
 import './globals.css'
 import logo from "@/src/images/logo.png"
 import backgroundImage from "@/src/images/EAT.png"
-import { resolveHref } from "next/dist/client/resolve-href"; // import the background image
+
 
 const NavBar = () => {
   return (
