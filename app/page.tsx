@@ -3,6 +3,7 @@ import Image from 'next/image'
 import './globals.css'
 import logo from "@/src/images/logo.png"
 import backgroundImage from "@/src/images/EAT.png"
+import mainimage from "@/src/images/mainpage.png"
 
 
 const NavBar = () => {
@@ -41,9 +42,7 @@ export default function Home() {
       <NavBar />
       <Image src={backgroundImage} alt="Background" layout="responsive" width={1920} height={1080}/>
       <main>
-        <div className="bg-gray">
-          <h1 className="text-black">i hate</h1>
-        </div>
+      <Image src={mainimage} alt="Main" layout="responsive" width={1920} height={1080}/>
       </main>
       <Footer />
     </div>
