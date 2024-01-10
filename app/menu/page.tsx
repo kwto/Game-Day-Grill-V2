@@ -1,6 +1,7 @@
+'use client';
 import Image from "next/image";
 import logo from "@/src/images/logo.png";
-import React from "react";
+import React from 'react';
 
 
 const NavBar = () => {
@@ -19,12 +20,45 @@ const NavBar = () => {
   );
 }
 
+const Footer = () => {
+  return (
+    <footer className="fixed bottom-0 w-full">
+      <ul className="navbar flex justify-between items-center p-4 bg-white">
+        <li>
+          <a href="/">
+            <Image src={logo} alt="Logo" className="logo" width={150} height={50} />
+          </a>
+        </li>
+      </ul>
+    </footer>
+  );
+}
+
+
+const PopupButton = () => {
+  const openPopup = () => {
+    const popup = window.open(
+      "customize/cAndQ",
+      "Popup",
+      "width=10,height=250"
+    );
+    if (window.focus) popup.focus();
+  };
+
+  return (
+    <button onClick={openPopup} className="rounded-button">
+      Click Me
+    </button>
+  );
+};
 
 
 export default function Home() {
   return (
     <div>
       <NavBar />
+      <PopupButton />
+      <Footer />
     </div>
-  )
+  );
 }
