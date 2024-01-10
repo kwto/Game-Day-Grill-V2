@@ -13,7 +13,7 @@ const NavBar = () => {
           <li><a href="/">HOME</a></li>
           <li><a href="contact">ABOUT US</a></li>
           <li><a href="menu">MENU</a></li>
-          <li><a href="checkout">CATERING</a></li>
+          <li><a href="catering">CATERING</a></li>
         </div>
       </ul>
     </nav>
@@ -38,7 +38,7 @@ const Footer = () => {
 const PopupButton = () => {
   const openPopup = () => {
     const popup = window.open(
-      "customize/cAndQ",
+      "customize/GameDayBurger",
       "Popup",
       "width=250,height=250"
     );

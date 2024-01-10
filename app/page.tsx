@@ -15,7 +15,7 @@ const NavBar = () => {
           <li><a href="/">HOME</a></li>
           <li><a href="contact">ABOUT US</a></li>
           <li><a href="menu">MENU</a></li>
-          <li><a href="checkout">CATERING</a></li>
+          <li><a href="catering">CATERING</a></li>
         </div>
       </ul>
     </nav>
