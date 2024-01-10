@@ -2,23 +2,23 @@
 import React, { useState, useEffect } from 'react';
 
 function CheckboxMemory() {
-  const [isSalsaChecked, setIsSalsaChecked] = useState(JSON.parse(localStorage.getItem('salsa')) || false);
-  const [isGuacamoleChecked, setIsGuacamoleChecked] = useState(JSON.parse(localStorage.getItem('guacamole')) || false);
+  const [isWhipCreamCCChecked, setIsWhipCreamCCChecked] = useState(JSON.parse(localStorage.getItem('whipcreamcc')) || false);
+  const [isStrawberryChecked, setIsStrawberryChecked] = useState(JSON.parse(localStorage.getItem('strawberry')) || false);
 
   useEffect(() => {
-    localStorage.setItem('salsa', JSON.stringify(isSalsaChecked));
-  }, [isSalsaChecked]);
+    localStorage.setItem('whipcreamcc', JSON.stringify(isWhipCreamCCChecked));
+  }, [isWhipCreamCCChecked]);
 
   useEffect(() => {
-    localStorage.setItem('guacamole', JSON.stringify(isGuacamoleChecked));
-  }, [isGuacamoleChecked]);
+    localStorage.setItem('strawberry', JSON.stringify(isStrawberryChecked));
+  }, [isStrawberryChecked]);
 
-  const handleSalsaCheckboxChange = (event) => {
-    setIsSalsaChecked(event.target.checked);
+  const handleWhipCreamCCCheckboxChange = (event) => {
+    setIsWhipCreamCCChecked(event.target.checked);
   };
 
-  const handleGuacamoleCheckboxChange = (event) => {
-    setIsGuacamoleChecked(event.target.checked);
+  const handleStrawberryCheckboxChange = (event) => {
+    setIsStrawberryChecked(event.target.checked);
   };
 
   return (
@@ -26,14 +26,14 @@ function CheckboxMemory() {
       Customize Cheese Cake
       <div>
         <label>
-          <input type="checkbox" checked={isSalsaChecked} onChange={handleSalsaCheckboxChange} />
+          <input type="checkbox" checked={isWhipCreamCCChecked} onChange={handleWhipCreamCCCheckboxChange} />
           Add Whipped Cream | $1
         </label>
       </div>
       <div>
         <label>
-          <input type="checkbox" checked={isGuacamoleChecked} onChange={handleGuacamoleCheckboxChange} />
-          Add Guacamole | $2
+          <input type="checkbox" checked={isStrawberryChecked} onChange={handleStrawberryCheckboxChange} />
+          Add Extra Strawberry Sauce | $2
         </label>
       </div>
     </div>

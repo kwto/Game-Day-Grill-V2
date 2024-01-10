@@ -42,7 +42,7 @@ function CheckboxMemory() {
       <div>
         <label>
           <input type="checkbox" checked={isWhipCreamICSChecked} onChange={handleWhipCreamICSCheckboxChange} />
-          Add Extra Whip Cream | $1
+          Add Extra Whipped Cream | $1
         </label>
       </div>
       <div>

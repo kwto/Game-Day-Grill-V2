@@ -1,8 +1,7 @@
-'use client';
-import Image from "next/image";
-import logo from "@/src/images/logo.png";
-import React from 'react';
-
+import React from 'react'
+import Image from 'next/image'
+import logo from "@/src/images/logo.png"
+import mainimage from "@/src/images/menuIP.png";
 
 const NavBar = () => {
   return (
@@ -20,6 +19,7 @@ const NavBar = () => {
   );
 }
 
+
 const Footer = () => {
   return (
     <footer className="fixed bottom-0 w-full">
@@ -34,30 +34,14 @@ const Footer = () => {
   );
 }
 
-
-const PopupButton = () => {
-  const openPopup = () => {
-    const popup = window.open(
-      "customize/Smoothie",
-      "Popup",
-      "width=275,height=250"
-    );
-    if (window.focus) popup.focus();
-  };
-  return (
-    <button onClick={openPopup} className="rounded-button">
-      Click Me
-    </button>
-  );
-};
-
-
 export default function Home() {
   return (
     <div>
       <NavBar />
-      <PopupButton />
+      <main>
+        <Image src={mainimage} alt="Main" layout="responsive" width={1920} height={1080}/>
+      </main>
       <Footer />
     </div>
-  );
+  )
 }
