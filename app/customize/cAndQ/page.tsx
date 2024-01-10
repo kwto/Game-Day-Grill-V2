@@ -1,9 +1,43 @@
-import React from 'react'
+'use client'
+import React, { useState, useEffect } from 'react';
 
-export default function Home() {
+function CheckboxMemory() {
+  const [isSalsaChecked, setIsSalsaChecked] = useState(JSON.parse(localStorage.getItem('salsa')) || false);
+  const [isGuacamoleChecked, setIsGuacamoleChecked] = useState(JSON.parse(localStorage.getItem('guacamole')) || false);
+
+  useEffect(() => {
+    localStorage.setItem('salsa', JSON.stringify(isSalsaChecked));
+  }, [isSalsaChecked]);
+
+  useEffect(() => {
+    localStorage.setItem('guacamole', JSON.stringify(isGuacamoleChecked));
+  }, [isGuacamoleChecked]);
+
+  const handleSalsaCheckboxChange = (event) => {
+    setIsSalsaChecked(event.target.checked);
+  };
+
+  const handleGuacamoleCheckboxChange = (event) => {
+    setIsGuacamoleChecked(event.target.checked);
+  };
+
   return (
     <div>
-      <li><a href="menu">MENU</a></li>
+      Customize Chips and Queso
+      <div>
+        <label>
+          <input type="checkbox" checked={isSalsaChecked} onChange={handleSalsaCheckboxChange} />
+          Add Salsa | $1.50
+        </label>
+      </div>
+      <div>
+        <label>
+          <input type="checkbox" checked={isGuacamoleChecked} onChange={handleGuacamoleCheckboxChange} />
+          Add Guacamole | $2
+        </label>
+      </div>
     </div>
-  )
+  );
 }
+
+export default CheckboxMemory;

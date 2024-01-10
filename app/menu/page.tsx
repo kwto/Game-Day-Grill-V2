@@ -40,7 +40,7 @@ const PopupButton = () => {
     const popup = window.open(
       "customize/cAndQ",
       "Popup",
-      "width=10,height=250"
+      "width=250,height=250"
     );
     if (window.focus) popup.focus();
   };
