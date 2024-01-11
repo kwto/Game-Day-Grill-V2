@@ -2,6 +2,7 @@
 import Image from "next/image";
 import logo from "@/src/images/logo.png";
 import React from 'react';
+import backgroundImage from "@/src/images/menutop.png";
 
 
 const NavBar = () => {
@@ -56,6 +57,8 @@ export default function Home() {
   return (
     <div>
       <NavBar />
+      <Image src={backgroundImage} alt="Background" layout="responsive" width={1920} height={1080}/>
+
       <PopupButton />
       <Footer />
     </div>
