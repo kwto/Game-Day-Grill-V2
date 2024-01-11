@@ -36,30 +36,49 @@ const Footer = () => {
 }
 
 
-const PopupButton = () => {
+const PopupButtonCAQ = () => {
   const openPopup = () => {
     const popup = window.open(
-      "customize/Smoothie",
+      "customize/cAndQ",
       "Popup",
       "width=275,height=250"
     );
     if (window.focus) popup.focus();
   };
   return (
-    <button onClick={openPopup} className="rounded-button">
-      Click Me
+    <button onClick={openPopup} className="rounded-button margin-right">
+      Customize
     </button>
   );
 };
 
+const PopupButtonMZZ = () => {
+  const openPopup = () => {
+    const popup = window.open(
+      "customize/MozStick",
+      "Popup",
+      "width=275,height=250"
+    );
+    if (window.focus) popup.focus();
+  };
+  return (
+    <button onClick={openPopup} className="rounded-button ">
+      Customize
+    </button>
+  );
+};
 
 export default function Home() {
   return (
     <div>
       <NavBar />
-      <Image src={backgroundImage} alt="Background" layout="responsive" width={1920} height={1080}/>
+      <Image src={backgroundImage} alt="Background" layout="responsive" width={1920} height={1080} />
 
-      <PopupButton />
+      <div style={{ display: 'flex', justifyContent: 'flex-end', paddingRight: '16.5%' }}>
+        <PopupButtonCAQ />
+        <PopupButtonMZZ />
+      </div>
+
       <Footer />
     </div>
   );
