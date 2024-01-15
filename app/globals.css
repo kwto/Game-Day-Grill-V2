@@ -56,3 +56,7 @@
 .margin-left {
     margin-left: 1%; /* Adjust as needed */
 }
+
+.g3sada {
+    grid-column: 3;
+}
