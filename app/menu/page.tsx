@@ -1,8 +1,8 @@
-'use client';
+'use client'
 import Image from "next/image";
 import logo from "@/src/images/logo.png";
-import React from 'react';
 import backgroundImage from "@/src/images/menutop.png";
+import React, { useState } from 'react';
 
 
 const NavBar = () => {
@@ -73,13 +73,12 @@ export default function Home() {
     <div>
       <NavBar />
       <Image src={backgroundImage} alt="Background" layout="responsive" width={1920} height={1080} />
-
       <div style={{ display: 'flex', justifyContent: 'flex-end', paddingRight: '16.5%' }}>
         <PopupButtonCAQ />
         <PopupButtonMZZ />
       </div>
-
       <Footer />
     </div>
   );
-}
+};
+
