@@ -1,6 +1,0 @@
-{
-  "extends": [
-    "Do this",
-    "prettier"
-  ]
-}

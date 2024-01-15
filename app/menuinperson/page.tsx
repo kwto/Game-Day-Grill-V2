@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import logo from "@/src/images/logo.png"
 import mainimage from "@/src/images/menuIP.png";
+import {Footer} from "@/src/comps/Footer";
 
 const NavBar = () => {
   return (
@@ -16,21 +17,6 @@ const NavBar = () => {
         </div>
       </ul>
     </nav>
-  );
-}
-
-
-const Footer = () => {
-  return (
-    <footer className="fixed bottom-0 w-full">
-      <ul className="navbar flex justify-between items-center p-4 bg-white">
-        <li>
-          <a href="/">
-            <Image src={logo} alt="Logo" className="logo" width={150} height={50} />
-          </a>
-        </li>
-      </ul>
-    </footer>
   );
 }
 
