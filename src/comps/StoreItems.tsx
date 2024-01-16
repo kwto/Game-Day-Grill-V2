@@ -10,15 +10,21 @@ type StoreItemProps = {
     imgUrl: string
 }
 
+/*
+get quantity of the id
+make sure the quantity is changeable
+//
+if quantity is 0, show add to cart button
+if quantity is not 0, show quantity and remove button
+ */
+
+
+
 export function StoreItem({ id, name, price, imgUrl }: StoreItemProps) {
-    const {
-        getItemQuantity,
-        increaseCartQuantity,
-        decreaseCartQuantity,
-        removeFromCart,
-    } = useShoppingCart()
-    
-    const quantity = getItemQuantity(id)
+
+    const { getItemQuantity, increaseCartQuantity, decreaseCartQuantity, removeFromCart } = useShoppingCart()
+
+    let quantity = getItemQuantity(id)
 
     return (
         <Card className="h-100">
