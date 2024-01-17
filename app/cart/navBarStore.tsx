@@ -45,7 +45,8 @@ export const NavBarStore = () => {
                         {showMenuItems &&
                             <Dropdown.Menu>
                                 <NavDropdown.Item eventKey="1" href="/menu">Menu </NavDropdown.Item>
-                                <NavDropdown.Item eventKey="2" href="/physicalmenu">| Physical Menu</NavDropdown.Item>
+                                <NavDropdown.Item eventKey="2" href="/physicalmenu">| Physical Menu </NavDropdown.Item>
+                                <NavDropdown.Item eventKey="3" href="/cart">| Cart</NavDropdown.Item>
                             </Dropdown.Menu>
                         }
                     </Dropdown>
