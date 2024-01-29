@@ -9,11 +9,13 @@ import {Footer} from "@/src/comps/Footer";
 export default function Home() {
   return (
     <div>
-      <NavBar />
-      <Image src={backgroundImage} alt="Background" layout="responsive" width={1920} height={1080}/>
-      <main>
-        <Image src={mainimage} alt="Main" layout="responsive" width={1920} height={1080}/>
-      </main>
+        <NavBar />
+        <div>
+            <Image src={backgroundImage} alt="Background" layout="responsive" width={1920} height={1080}/>
+            <main>
+                <Image src={mainimage} alt="Main" layout="responsive" width={1920} height={1080}/>
+            </main>
+        </div>
       <Footer />
     </div>
   )

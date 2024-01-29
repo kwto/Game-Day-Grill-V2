@@ -1,6 +1,5 @@
 'use client'
 import storeItems from "@/src/store/items.json";
-import { Col, Row } from "react-bootstrap";
 import { StoreItem } from "@/src/comps/StoreItems";
 import React from "react";
 import {NavBar} from "@/src/comps/NavBar";
@@ -11,13 +10,13 @@ export default function Home() {
         <a href={"/cartEDIT"}>
           <h1 className="text-6xl font-extrabold flex flex-col justify-center items-center">to-cart</h1>
         </a>
-        <Row md={2} xs={1} lg={3} className="g-3">
-          {storeItems.map(item => (
-              <Col key={item.id}>
-                <StoreItem {...item} />
-              </Col>
-          ))}
-        </Row>
+        {/*<Row md={2} xs={1} lg={3} className="g-3">*/}
+        {/*  {storeItems.map(item => (*/}
+        {/*      <Col key={item.id}>*/}
+        {/*        <StoreItem {...item} />*/}
+        {/*      </Col>*/}
+        {/*  ))}*/}
+        {/*</Row>*/}
       </>
   )
 };
