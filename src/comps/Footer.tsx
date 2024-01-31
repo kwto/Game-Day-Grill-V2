@@ -1,21 +1,30 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 export const Footer = () => {
-
     const animations = ["animate-spin", "animate-ping", "animate-bounce", "animate-pulse"];
     const [randomElement, setRandomElement] = useState('');
+    const [previousRandomElement, setPreviousRandomElement] = useState('');
 
     const handleClick = () => {
         let newRandomElement;
         do {
             newRandomElement = animations[Math.floor(Math.random() * animations.length)];
-        } while (newRandomElement === randomElement);
-        console.log(newRandomElement);
-        setRandomElement(newRandomElement);
+        } while (newRandomElement === randomElement || newRandomElement === previousRandomElement);
+
+        // Update the previous random element before setting the new one
+        setPreviousRandomElement(randomElement);
+
+        // Use the functional form to ensure the new state is based on the previous state
+        setRandomElement(prevRandomElement => {
+            // Ensure the new state is different from the previous one
+            return newRandomElement !== prevRandomElement ? newRandomElement : '';
+        });
     }
 
-    // Run handleClick once on component mount
-    useEffect(handleClick, []);
+    const handleMouseLeave = () => {
+        // Clear the animation when mouse leaves
+        setRandomElement('');
+    }
 
     return (
         <div className="navbar bg-base-100">
@@ -26,9 +35,11 @@ export const Footer = () => {
                 />
             </div>
             <button
-                onClick={handleClick}
-                className={`btn text-xl align-middle hover:${randomElement}`}
-            >   Game Day Grill
+                onMouseEnter={handleClick} // Trigger animation on hover
+                onMouseLeave={handleMouseLeave} // Clear animation on leave
+                className={`btn text-xl align-middle ${randomElement}`}
+            >
+                Game Day Grill
             </button>
         </div>
     );
