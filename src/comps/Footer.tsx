@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 
 export const Footer = () => {
     const animations = ["animate-spin", "animate-ping", "animate-bounce", "animate-pulse"];
-    const [randomElement, setRandomElement] = useState('');
-    const [previousRandomElement, setPreviousRandomElement] = useState('');
+    const [randomElement, setRandomElement] = useState<string>('');
+    const [previousRandomElement, setPreviousRandomElement] = useState<string>('');
 
     const handleClick = () => {
-        let newRandomElement;
+        let newRandomElement: string;
         do {
             newRandomElement = animations[Math.floor(Math.random() * animations.length)];
         } while (newRandomElement === randomElement || newRandomElement === previousRandomElement);
