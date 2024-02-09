@@ -1,5 +1,4 @@
 'use client'
-import {Footer} from "@/src/comps/Footer";
 import React from "react";
 import {NavBar} from "@/src/comps/NavBar"
 
