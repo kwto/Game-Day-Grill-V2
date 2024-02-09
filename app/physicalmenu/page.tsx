@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import Image from 'next/image'
-import mainimage from "@/src/images/menuIP.png";
+import mainimage from "@/src/images/MenuIP.png";
 import {Footer} from "@/src/comps/Footer";
 import {NavBar} from "@/src/comps/NavBar";
 
