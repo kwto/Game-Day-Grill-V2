@@ -1,9 +1,24 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Getting Started
 
-First, run the development server:
+Install Node JS:
 
+https://nodejs.org
+
+Download the code from git:
+
+(gif of downloading zip and unzip)
+
+or
+
+`git clone https://github.com/kwto/Game-Day-Grill-V2`
+
+Run the development server:
+
+Open the folder in terminal or command prompt
+
+run
 ```bash
 npm run dev
 # or
