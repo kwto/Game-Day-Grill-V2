@@ -1,13 +1,17 @@
-import React, {useEffect, useState} from "react";
+import React, {useContext, useState} from "react";
 
 export const NavBar = () => {
 
-    const [iscoffe, setiscoffe] = useState(
-        JSON.parse(localStorage.getItem('iscoffee') as string)
-    );
-    useEffect(() => {
-        localStorage.setItem('iscoffee', JSON.stringify(iscoffe));
-    }, [iscoffe]);
+    // call local storage for false and true
+    // set the state of iscoffee to the value of local storage
+
+
+
+    console.log(window);
+    const temp = localStorage.getItem('iscoffee');
+    console.log(temp);
+
+    const [iscoffee, setiscoffee] = useState(temp);
 
     return (
         <div className="navbar">
@@ -17,8 +21,8 @@ export const NavBar = () => {
                         type="checkbox"
                         className="theme-controller"
                         value="coffee"
-                        checked={iscoffe}
-                        onChange={() => setiscoffe(!iscoffe)}
+                        checked={iscoffee}
+                        onChange = {() => { localStorage.setItem('iscoffee', !iscoffee); setiscoffee(!iscoffee)}}
                     />
                     <img
                         alt="Tailwind CSS Navbar component"
