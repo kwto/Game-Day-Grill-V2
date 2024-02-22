@@ -8,7 +8,7 @@ export const NavBar = () => {
     // Handler :: To change theme on clicking logo
     const handleOnChange = () => {
         const currentTheme = localStorage.getItem('theme')
-        const updatedTheme = currentTheme === 'retro' ? 'coffee': 'retro'
+        const updatedTheme = currentTheme === 'autumn' ? 'coffee': 'autumn'
         handleOnChangeTheme(updatedTheme)
     }    
 

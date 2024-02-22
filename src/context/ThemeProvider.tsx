@@ -4,12 +4,12 @@ import { createContext, useEffect, useState } from 'react'
 export const ThemeContext = createContext<any>({})
 
 export const ThemeProvider = ({ children }: any) => {
-    const [theme, setTheme] = useState('retro')
+    const [theme, setTheme] = useState('autumn')
     const [isMounted, setIsMounted] = useState(false)
 
     useEffect(() => {
         setIsMounted(true)
-        const storedTheme = localStorage?.getItem('theme') || 'retro'
+        const storedTheme = localStorage?.getItem('theme') || 'autumn'
         setTheme(storedTheme)
     }, [])
 
