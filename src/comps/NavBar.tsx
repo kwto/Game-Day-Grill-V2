@@ -1,17 +1,16 @@
-import React, {useContext, useState} from "react";
+import React, { useContext } from "react";
+import { ThemeContext } from "../context/ThemeProvider";
 
 export const NavBar = () => {
 
-    // call local storage for false and true
-    // set the state of iscoffee to the value of local storage
+    const { handleOnChangeTheme } = useContext(ThemeContext)
 
-
-
-    console.log(window);
-    const temp = localStorage.getItem('iscoffee');
-    console.log(temp);
-
-    const [iscoffee, setiscoffee] = useState(temp);
+    // Handler :: To change theme on clicking logo
+    const handleOnChange = () => {
+        const currentTheme = localStorage.getItem('theme')
+        const updatedTheme = currentTheme === 'retro' ? 'coffee': 'retro'
+        handleOnChangeTheme(updatedTheme)
+    }    
 
     return (
         <div className="navbar">
@@ -20,9 +19,7 @@ export const NavBar = () => {
                     <input
                         type="checkbox"
                         className="theme-controller"
-                        value="coffee"
-                        checked={iscoffee}
-                        onChange = {() => { localStorage.setItem('iscoffee', !iscoffee); setiscoffee(!iscoffee)}}
+                        onChange = {handleOnChange}
                     />
                     <img
                         alt="Tailwind CSS Navbar component"
