@@ -42,11 +42,11 @@ export const NavBar = () => {
 
                 <ul className="menu menu-horizontal mx-1">
 
-                    <li><a href="/" className="font-bold btn btn-neutral rounded-xl">Home</a></li>
+                    <li><a href="/" className="btn font-bold rounded-xl rounded-xl">Home</a></li>
 
                     <li>
                         <details>
-                        <summary className="btn btn-neutral rounded-xl mx-1">
+                        <summary className="btn font-bold rounded-xl no-animation mx-1">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                      className="inline-block w-5 h-5 stroke-current">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
@@ -63,7 +63,7 @@ export const NavBar = () => {
 
                     <li>
                         <details>
-                            <summary className="btn btn-neutral text-light rounded-xl no-animation mx-0.5">
+                            <summary className="btn font-bold rounded-xl no-animation mx-0.5">
                                 Menu
                             </summary>
                             <ul className="font-bold">
