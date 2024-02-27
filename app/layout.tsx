@@ -1,9 +1,10 @@
-import { ThemeProvider } from '@/src/context/ThemeProvider';
+import { ThemeProvider} from '@/src/context/ThemeProvider';
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import React from "react";
 import { ContextWrapper } from '@/src/context/ContextWrapper';
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,14 +18,15 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <ThemeProvider>
+      <body className={inter.className} >
+      <ThemeProvider>
           <ContextWrapper>
-            {children}
+              {children}
           </ContextWrapper>
-        </ThemeProvider>
+      </ThemeProvider>
       </body>
     </html>
   )

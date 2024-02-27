@@ -22,6 +22,7 @@ export const ThemeProvider = ({ children }: any) => {
         return <div>Loading...</div>
     }
 
+
     return (
         <ThemeContext.Provider value={{ theme, handleOnChangeTheme }}>
             { children }
