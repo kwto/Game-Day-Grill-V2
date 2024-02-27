@@ -9,8 +9,15 @@ import { ContextWrapper } from '@/src/context/ContextWrapper';
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Game Day Grill',
-  description: 'Game Day Grill for BPA',
+    title: 'Game Day Grill',
+    description: 'Game Day Grill is a restaurant located in Southlake, Texas. We serve a variety of food and drinks. We are open 7 days a week. We are open for breakfast, lunch, and dinner. We also offer catering services. We are located at 1720 Southlake Blvd. Southlake, TX. 76092. We are open from 7:00 am to 10:00 pm',
+    lang: 'en',
+    siteName: 'Game Day Grill',
+    image: '/imgs/logo.png',
+    type: 'website',
+    url: 'https://kathirdev.com',
+    keywords: ['BPA', 'Game Day Grill', 'Restaurant', 'Southlake', 'Texas'],
+    locale: 'en_US',
 }
 
 export default function RootLayout({
