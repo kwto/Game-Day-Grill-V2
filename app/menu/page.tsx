@@ -45,12 +45,7 @@ export default function Home() {
             </div>
             <main className=" min-h-screen">
 
-                <div className="max-w-5xl mx-auto py-8">
-                    <div className="flex items-center justify-between border-b pb-3">
-                        <h1 className="font-semibold tracking-wide leading-10 text-xl lg:text-3xl">
-                            Shop Now
-                        </h1>
-                    </div>
+                
 
                     <div className="mt-8 grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-3 xl:gap-x-8">
                         {
@@ -59,7 +54,6 @@ export default function Home() {
                             ))
                         }
                     </div>
-                </div>
             </main>
 
             <Footer/>
