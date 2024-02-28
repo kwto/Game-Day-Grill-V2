@@ -25,7 +25,3 @@ export default function Home() {
 
   )
 }
-/*
-<NavBar />
-            <Image  className="" src={backgroundImage} alt="Background" layout="responsive" width={1920} height={1080}/>
- */
