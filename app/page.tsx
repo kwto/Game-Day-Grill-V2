@@ -109,37 +109,3 @@ export default function Home() {
 
   )
 }
-/*
- <div className="lg:w-1/3">
-          <div className="p-10 lg:p-28">
-            <Image
-              src={BestOfTheBest}
-              alt="Best Of The Best"
-              layout="responsive"
-              width={697}
-              height={573}
-              className="w-full h-auto rounded-3xl"
-            />
-          </div>
-        </div>
-        <div className="lg:w-1/3">
-          <div className="p-10 lg:p-36">
-            <p>Your text goes here</p>
-          </div>
-        </div>
-        <div className="lg:w-1/3">
-          <div className="p-10 lg:pl-80">
-            <Image
-              src={HappyGuyMainPage}
-              alt="Happy Guy Main Page"
-              layout="responsive"
-              width={729}
-              height={493}
-              className="w-full h-auto rounded-3xl"
-            />
-          </div>
-        </div> 
-        </div>
-        <Footer />
-      </div>
- */
