@@ -21,7 +21,7 @@ export default function Home() {
               className="w-full h-auto"
           />
           <div className="absolute top-0 left-0 w-full h-full bg-opacity-50 px-6">
-              <NavBar/>
+              <NavBar />
           </div>
           <div className="flex flex-row">
             <div className="basis-1/2">
