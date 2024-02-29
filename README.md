@@ -8,6 +8,10 @@ Install Node JS:
 
 https://nodejs.org
 
+Install Git:
+
+https://git-scm.com/downloads
+
 Download the code with git:
 
 ```bash
