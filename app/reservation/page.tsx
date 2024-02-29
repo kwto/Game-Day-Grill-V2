@@ -2,7 +2,7 @@
 import { Footer } from "@/src/comps/Footer";
 import { NavBar } from "@/src/comps/NavBar";
 import Calendar from "@/src/imgs/webParts/Calendar.png";
-import Reservations from "@/src/imgs/webParts/webParts/Reservations.png";
+import Reservations from "@/src/imgs/webParts/Reservations.png";
 import Image from 'next/image';
 
 

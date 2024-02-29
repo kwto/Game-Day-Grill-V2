@@ -1,7 +1,7 @@
 'use client'
 import { Footer } from "@/src/comps/Footer";
 import { NavBar } from "@/src/comps/NavBar";
-import mainimage from "@/src/imgs/webParts/webParts/MenuIP.png";
+import mainimage from "@/src/imgs/webParts/MenuIP.png";
 import Image from 'next/image';
 
 export default function Home() {
