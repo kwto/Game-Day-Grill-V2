@@ -69,7 +69,7 @@ export const NavBar = () => {
                             <ul className="font-bold">
                                 <li><a href="/menu">Online Menu</a></li>
                                 <li><a href="/physicalmenu">Physical Menu</a></li>
-                                <li><a href="/cart">Cart</a></li>
+                                {/*<li><a href="/cart">Cart</a></li>*/}
                             </ul>
                         </details>
                     </li>

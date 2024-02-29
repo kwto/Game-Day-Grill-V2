@@ -24,7 +24,7 @@ export default function Home({ price }) {
             return (
                 <img
                     alt="Chips and Queso"
-                    src="/imgs/ChipsandQueso.png"
+                    src="/imgs/food/ChipsandQueso.png"
                     className="rounded-full w-16 h-16"
                     width={200}
                     height={90}
@@ -34,7 +34,7 @@ export default function Home({ price }) {
             return (
                 <img
                     alt="Mozzarella Stick"
-                    src="/imgs/MozzarellaSticks.png"
+                    src="/imgs/food/MozzarellaSticks.png"
                     className="rounded-full w-16 h-16"
                     width={200}
                     height={90}
@@ -44,7 +44,7 @@ export default function Home({ price }) {
             return (
                 <img
                     alt="Gameday Wings"
-                    src="/imgs/GamedayWings.png"
+                    src="/imgs/food/GamedayWings.png"
                     className="rounded-full w-16 h-16"
                     width={200}
                     height={90}
@@ -54,7 +54,7 @@ export default function Home({ price }) {
             return (
                 <img
                     alt="Fried Calamari"
-                    src="/imgs/FriedCalamari.png"
+                    src="/imgs/food/FriedCalamari.png"
                     className="rounded-full w-16 h-16"
                     width={200}
                     height={90}
@@ -64,7 +64,7 @@ export default function Home({ price }) {
             return (
                 <img
                     alt="Gameday Burger"
-                    src="/imgs/GamedayBurger.png"
+                    src="/imgs/food/GamedayBurger.png"
                     className="rounded-full w-16 h-16"
                     width={200}
                     height={90}
@@ -74,7 +74,7 @@ export default function Home({ price }) {
             return (
                 <img
                     alt="Chicken Tenders"
-                    src="/imgs/ChickenTenders.png"
+                    src="/imgs/food/ChickenTenders.png"
                     className="rounded-full w-16 h-16"
                     width={200}
                     height={90}
@@ -84,7 +84,7 @@ export default function Home({ price }) {
             return (
                 <img
                     alt="Chicken Sandwich"
-                    src="/imgs/ChickenSandwich.png"
+                    src="/imgs/food/ChickenSandwich.png"
                     className="rounded-full w-16 h-16"
                     width={200}
                     height={90}
@@ -94,7 +94,7 @@ export default function Home({ price }) {
             return (
                 <img
                     alt="Grilled Chicken Sandwich"
-                    src="/imgs/GrilledChickenSandwich.png"
+                    src="/imgs/food/GrilledChickenSandwich.png"
                     className="rounded-full w-16 h-16"
                     width={200}
                     height={90}
@@ -104,7 +104,7 @@ export default function Home({ price }) {
             return (
                 <img
                     alt="Vegan Burger"
-                    src="/imgs/Veganburger.png"
+                    src="/imgs/food/Veganburger.png"
                     className="rounded-full w-16 h-16"
                     width={200}
                     height={90}
@@ -114,7 +114,7 @@ export default function Home({ price }) {
             return (
                 <img
                     alt="The Classic"
-                    src="/imgs/Theclassic.png"
+                    src="/imgs/food/Theclassic.png"
                     className="rounded-full w-16 h-16"
                     width={200}
                     height={90}
@@ -124,7 +124,7 @@ export default function Home({ price }) {
             return (
                 <img
                     alt="Ice Cream Sundae"
-                    src="/imgs/Icecreamsundae.png"
+                    src="/imgs/food/Icecreamsundae.png"
                     className="rounded-full w-16 h-16"
                     width={200}
                     height={90}
@@ -134,7 +134,7 @@ export default function Home({ price }) {
             return (
                 <img
                     alt="Cheesecake"
-                    src="/imgs/cheesecake.png"
+                    src="/imgs/food/cheesecake.png"
                     className="rounded-full w-16 h-16"
                     width={200}
                     height={90}
@@ -144,7 +144,7 @@ export default function Home({ price }) {
             return (
                 <img
                     alt="Tiramisu"
-                    src="/imgs/tiramisu.png"
+                    src="/imgs/food/tiramisu.png"
                     className="rounded-full w-16 h-16"
                     width={200}
                     height={90}
@@ -154,7 +154,7 @@ export default function Home({ price }) {
             return (
                 <img
                     alt="Apple Pie"
-                    src="/imgs/applepie.png"
+                    src="/imgs/food/applepie.png"
                     className="rounded-full w-16 h-16"
                     width={200}
                     height={90}
@@ -164,7 +164,7 @@ export default function Home({ price }) {
             return (
                 <img
                     alt="Coca Cola"
-                    src="/imgs/Cocacola.png"
+                    src="/imgs/food/Cocacola.png"
                     className="rounded-full w-16 h-16"
                     width={200}
                     height={90}
@@ -174,7 +174,7 @@ export default function Home({ price }) {
             return (
                 <img
                     alt="Strawberry Smoothies"
-                    src="/imgs/StrawberrySmoothies.png"
+                    src="/imgs/food/StrawberrySmoothies.png"
                     className="rounded-full w-16 h-16"
                     width={200}
                     height={90}
@@ -184,7 +184,7 @@ export default function Home({ price }) {
             return (
                 <img
                     alt="Chocolate Shake"
-                    src="/imgs/ChocolateShake.png"
+                    src="/imgs/food/ChocolateShake.png"
                     className="rounded-full w-16 h-16"
                     width={200}
                     height={90}
@@ -194,7 +194,7 @@ export default function Home({ price }) {
             return (
                 <img
                     alt="Orange Juice"
-                    src="/imgs/OrangeJuice.png"
+                    src="/imgs/food/OrangeJuice.png"
                     className="rounded-full w-16 h-16"
                     width={200}
                     height={90}

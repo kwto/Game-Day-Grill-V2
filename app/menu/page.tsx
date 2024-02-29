@@ -1,12 +1,11 @@
 'use client'
-import {NavBar} from "@/src/comps/NavBar";
-import {Footer} from "@/src/comps/Footer";
+import { Footer } from "@/src/comps/Footer";
+import { NavBar } from "@/src/comps/NavBar";
+import PricingCard from "@/src/comps/PricingCard";
+import backgroundImage from "@/src/imgs/webParts/topMenuOrder.png";
+import axios from 'axios';
 import Image from "next/image";
-import backgroundImage from "@/src/imagesBetter/topMenuOrder.png";
-import axios from 'axios'
-import { useState, useEffect } from "react"
-import React from 'react'
-import PricingCard from "@/src/comps/PricingCard"
+import { useEffect, useState } from "react";
 
 
 export default function Home() {

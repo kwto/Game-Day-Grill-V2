@@ -1,12 +1,10 @@
 'use client'
-import React from 'react'
-import Image from 'next/image'
-import mainimage from "@/src/images/catering.png";
-import {Footer} from "@/src/comps/Footer";
-import {NavBar} from "@/src/comps/NavBar";
-import Catering from "@/src/imagesBetter/Catering.png";
-import Food from "@/src/imagesBetter/Food.png";
-import Champagne from "@/src/imagesBetter/Champagne.png";
+import { Footer } from "@/src/comps/Footer";
+import { NavBar } from "@/src/comps/NavBar";
+import Catering from "@/src/imgs/webParts/Catering.png";
+import Food from "@/src/imgs/webParts/Food.png";
+import Image from 'next/image';
+import Champagne from "../../src/imgs/webParts/Champagne.png";
 
 
 export default function Home() {

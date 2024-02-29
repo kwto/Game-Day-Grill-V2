@@ -1,19 +1,18 @@
 'use client'
-import React from 'react'
-import Image from 'next/image'
-import backgroundImage from "@/src/images/EAT.png"
-import {NavBar} from "@/src/comps/NavBar";
-import {Footer} from "@/src/comps/Footer";
-import mainPageBurger from "@/src/imagesBetter/mainPageBurger.png";
-import HappyGuyMainPage from "@/src/imagesBetter/HappyGuyMainPage.png";
-import BestOfTheBest from "@/src/imagesBetter/BestOfTheBest.png";
-import TravellersChoice from "@/src/imagesBetter/TravellersChoice.png";
+import { Footer } from "@/src/comps/Footer";
+import { NavBar } from "@/src/comps/NavBar";
+import HappyGuyMainPage from "@/src/imgs/webParts/HappyGuyMainPage.png";
+import mainPageBurger from "@/src/imgs/webParts/mainPageBurger.png";
+import mainTop from "@/src/imgs/webParts/ECR.png";
+import Image from 'next/image';
+import BestOfTheBest from "../src/imgs/webParts/BestOfTheBest.png";
+import TravellersChoice from "../src/imgs/webParts/TravellersChoice.png";
 
 export default function Home() {
   return (
       <div className="relative">
           <Image
-              src={backgroundImage}
+              src={mainTop}
               alt="Background"
               layout="responsive"
               width={1920}

@@ -1,11 +1,9 @@
 'use client'
-import React from 'react'
-import Image from 'next/image'
-import mainimage from "@/src/images/about.png";
-import {Footer} from "@/src/comps/Footer";
-import {NavBar} from "@/src/comps/NavBar";
-import Tradition from "@/src/imagesBetter/Tradition.png";
-import Woman from "@/src/imagesBetter/Woman.png";
+import { Footer } from "@/src/comps/Footer";
+import { NavBar } from "@/src/comps/NavBar";
+import Tradition from "@/src/imgs/webParts/Tradition.png";
+import Woman from "@/src/imgs/webParts/Woman.png";
+import Image from 'next/image';
 
 
 

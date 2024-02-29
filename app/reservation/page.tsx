@@ -1,11 +1,9 @@
 'use client'
-import React from 'react'
-import Image from 'next/image'
-import mainimage from "@/src/images/res.png";
-import {Footer} from "@/src/comps/Footer";
-import {NavBar} from "@/src/comps/NavBar";
-import Reservations from "@/src/imagesBetter/Reservations.png";
-import Calendar from "@/src/imagesBetter/Calendar.png";
+import { Footer } from "@/src/comps/Footer";
+import { NavBar } from "@/src/comps/NavBar";
+import Calendar from "@/src/imgs/webParts/Calendar.png";
+import Reservations from "@/src/imgs/webParts/webParts/Reservations.png";
+import Image from 'next/image';
 
 
 export default function Home() {
