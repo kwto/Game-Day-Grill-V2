@@ -82,7 +82,7 @@ export default function Home() {
                 <div className="basis-1/3">
                     <div className="pl-48 pt-52">
                     <p className="text-8xl font-bold pb-10 text-red-600">PEOPLE.</p>
-                    <p className="text-6xl font-bold pb-10 ">OUR TOP PIRORITY</p>
+                    <p className="text-6xl font-bold pb-10 ">OUR TOP PRIORITY</p>
                     <p className="text-3xl pb-6 ">At Gameday Grill, we pride ourselves on our </p>
                     <p className="text-3xl pb-6 ">dedication to utmost hospitality. We make </p>
                     <p className="text-3xl pb-6 ">sure every guest is treated with patience and </p>

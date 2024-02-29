@@ -38,7 +38,7 @@ export default function Home() {
             </div>
                 <div className="basis-1/2">
                     <div className="p-36 pt-48">
-                        <p className="text-6xl font-bold pb-12">WE'LL BRING THE FOOD</p>
+                        <p className="text-6xl font-bold pb-12">WE WILL BRING THE FOOD</p>
                         <p className="text-6xl font-bold pb-10 text-red-600">TO YOU</p>
                         <p className="text-3xl pb-6">We would be honored if you allowed us to be a </p>
                         <p className="text-3xl pb-6">part of your special event. We offer catering for </p>
