@@ -1,73 +1,226 @@
 import axios from "axios";
-import {getProductName, getPriceTotal, getProductImage, getProductDescription} from "@/src/comps/items";
+import {getPriceTotal} from "@/src/comps/items";
+import React from "react";
 
 export default function Home({ price }) {
 
     const handleSubscription = async (e) => {
         e.preventDefault();
         const { data } = await axios.post('/api/payment',
-        {
-          priceId: price.id
-        },
-        {
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }
+            {
+                priceId: price.id
+            },
+            {
+                headers: {
+                    "Content-Type": "application/json",
+                },
+            }
         );
         window.location.assign(data)
-      }
-    
+    }
 
-      const imageNames = [
-        'ChipsandQueso.png',
-        'MozzarellaSticks.png',
-        'GamedayWings.png',
-        'FriedCalamari.png',
-        'GamedayBurger.png',
-        'ChickenTenders.png',
-        'ChickenSandwich.png',
-        'GrilledChickenSandwich.png',
-        'Veganburger.png',
-        'Theclassic.png',
-        'Icecreamsundae.png',
-        'cheesecake.png',
-        'tiramisu.png',
-        'applepie.png',
-        'Cocacola.png',
-        'StrawberrySmoothies.png',
-        'ChocolateShake.png',
-        'OrangeJuice.png'
-      ];
+    const dynamicImage = (price) => {
+        if (price.nickname === "Chips and Queso") {
+            return (
+                <img
+                    alt="Chips and Queso"
+                    src="/imgs/ChipsandQueso.png"
+                    className="rounded-full w-16 h-16"
+                    width={200}
+                    height={90}
+                />
+            );
+        } else if (price.nickname === "Mozzarella Stick") {
+            return (
+                <img
+                    alt="Mozzarella Stick"
+                    src="/imgs/MozzarellaSticks.png"
+                    className="rounded-full w-16 h-16"
+                    width={200}
+                    height={90}
+                />
+            );
+        } else if (price.nickname === "Gameday Wings") {
+            return (
+                <img
+                    alt="Gameday Wings"
+                    src="/imgs/GamedayWings.png"
+                    className="rounded-full w-16 h-16"
+                    width={200}
+                    height={90}
+                />
+            );
+        } else if (price.nickname === "Fried Calamari") {
+            return (
+                <img
+                    alt="Fried Calamari"
+                    src="/imgs/FriedCalamari.png"
+                    className="rounded-full w-16 h-16"
+                    width={200}
+                    height={90}
+                />
+            );
+        } else if (price.nickname === "Gameday Burger") {
+            return (
+                <img
+                    alt="Gameday Burger"
+                    src="/imgs/GamedayBurger.png"
+                    className="rounded-full w-16 h-16"
+                    width={200}
+                    height={90}
+                />
+            );
+        } else if (price.nickname === "Chicken Tender") {
+            return (
+                <img
+                    alt="Chicken Tenders"
+                    src="/imgs/ChickenTenders.png"
+                    className="rounded-full w-16 h-16"
+                    width={200}
+                    height={90}
+                />
+            );
+        } else if (price.nickname === "Chicken Sandwich") {
+            return (
+                <img
+                    alt="Chicken Sandwich"
+                    src="/imgs/ChickenSandwich.png"
+                    className="rounded-full w-16 h-16"
+                    width={200}
+                    height={90}
+                />
+            );
+        } else if (price.nickname === "Grilled Chicken Sandwich") {
+            return (
+                <img
+                    alt="Grilled Chicken Sandwich"
+                    src="/imgs/GrilledChickenSandwich.png"
+                    className="rounded-full w-16 h-16"
+                    width={200}
+                    height={90}
+                />
+            );
+        } else if (price.nickname === "Vegan Burger") {
+            return (
+                <img
+                    alt="Vegan Burger"
+                    src="/imgs/Veganburger.png"
+                    className="rounded-full w-16 h-16"
+                    width={200}
+                    height={90}
+                />
+            );
+        } else if (price.nickname === "The Classic") {
+            return (
+                <img
+                    alt="The Classic"
+                    src="/imgs/Theclassic.png"
+                    className="rounded-full w-16 h-16"
+                    width={200}
+                    height={90}
+                />
+            );
+        } else if (price.nickname === "Ice Cream Sundae") {
+            return (
+                <img
+                    alt="Ice Cream Sundae"
+                    src="/imgs/Icecreamsundae.png"
+                    className="rounded-full w-16 h-16"
+                    width={200}
+                    height={90}
+                />
+            );
+        } else if (price.nickname === "Cheesecake") {
+            return (
+                <img
+                    alt="Cheesecake"
+                    src="/imgs/cheesecake.png"
+                    className="rounded-full w-16 h-16"
+                    width={200}
+                    height={90}
+                />
+            );
+        } else if (price.nickname === "Tiramisu") {
+            return (
+                <img
+                    alt="Tiramisu"
+                    src="/imgs/tiramisu.png"
+                    className="rounded-full w-16 h-16"
+                    width={200}
+                    height={90}
+                />
+            );
+        } else if (price.nickname === "Apple Pie") {
+            return (
+                <img
+                    alt="Apple Pie"
+                    src="/imgs/applepie.png"
+                    className="rounded-full w-16 h-16"
+                    width={200}
+                    height={90}
+                />
+            );
+        } else if (price.nickname === "Coca-Cola") {
+            return (
+                <img
+                    alt="Coca Cola"
+                    src="/imgs/Cocacola.png"
+                    className="rounded-full w-16 h-16"
+                    width={200}
+                    height={90}
+                />
+            );
+        } else if (price.nickname === "Strawberry Smoothie") {
+            return (
+                <img
+                    alt="Strawberry Smoothies"
+                    src="/imgs/StrawberrySmoothies.png"
+                    className="rounded-full w-16 h-16"
+                    width={200}
+                    height={90}
+                />
+            );
+        } else if (price.nickname === "Chocolate Milkshake") {
+            return (
+                <img
+                    alt="Chocolate Shake"
+                    src="/imgs/ChocolateShake.png"
+                    className="rounded-full w-16 h-16"
+                    width={200}
+                    height={90}
+                />
+            );
+        } else if (price.nickname === "Orange Juice") {
+            return (
+                <img
+                    alt="Orange Juice"
+                    src="/imgs/OrangeJuice.png"
+                    className="rounded-full w-16 h-16"
+                    width={200}
+                    height={90}
+                />
+            );
+        }
+    };
+
 
     return (
-        <div>
+        <div className="flex flex-col items-center justify-center">
             {price.product && (
-                <div className="relative">
-                    {/* <div className=" w-full h-72 rounded-lg">
-                        <image
-                            src={getProductImage(price.product)}
-                            alt={getProductDescription(price.product)}
-                            className="w-full h-full object-center object-cover"
-                        />
-                    </div> */}
-                    <div className="relative mt-4">
-                        <h3 className="text-sm font-medium ">{getProductName(price.product)}</h3>
+                <div className="relative text-center">
+                    <div className="relative mb-4">
+                        <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-t from-black opacity-50 rounded-lg"/>
+                        <p>{dynamicImage(price)}</p>
+                        <h4 className="text-lg font-bold relative z-10">{price.nickname}</h4>
                     </div>
-                    <div className="absolute top-0 inset-x-0 h-full rounded-lg p-4 flex items-end justify-end overflow-hidden">
-                        <div aria-hidden="true" className="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-black opacity-50" />
-                        <h4 className="text-lg font-bold text-white">
-  {price.nickname}
-  {imageNames.map((name, index) => (
-    <image key={index} src={`../images/${name}`} alt="Product" />
-  ))}
-</h4>
-                        <btn className="btn ml-5 mr-4 mb-4" onClick={handleSubscription}>
-                             Add To Cart {price.metadata.price} -  ${getPriceTotal(price)}
-                        </btn>
-                    </div>
+                    <button className="btn" onClick={handleSubscription}>
+                        Add To Cart {price.metadata.price} - ${getPriceTotal(price)}
+                    </button>
                 </div>
             )}
         </div>
     );
+
+
+
 }
