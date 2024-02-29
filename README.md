@@ -8,16 +8,16 @@ Install Node JS:
 
 https://nodejs.org
 
-To run the project locally, first install the dependencies:
-
-```bash
-npm i
-```
-
 Download the code with git:
 
 ```bash
 git clone https://github.com/kwto/Game-Day-Grill-V2
+```
+
+To run the project locally, first install the dependencies:
+
+```bash
+npm i
 ```
 
 Next, run the development server:

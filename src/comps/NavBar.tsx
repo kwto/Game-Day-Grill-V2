@@ -13,7 +13,7 @@ export const NavBar = () => {
     }    
 
     return (
-        <div className="navbar">
+        <div className="navbar ">
             <div className="flex-1">
                 <label className="swap swap-rotate">
                     <input
