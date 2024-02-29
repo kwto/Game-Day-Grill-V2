@@ -214,7 +214,7 @@ export default function Home({ price }) {
                         <h4 className="text-lg font-bold relative z-10">{price.nickname}</h4>
                     </div>
                     <button className="btn" onClick={handleSubscription}>
-                        Add To Cart {price.metadata.price} - ${getPriceTotal(price)}
+                        Buy {price.metadata.price} - ${getPriceTotal(price)}
                     </button>
                 </div>
             )}
